@@ -7,7 +7,8 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     library: 'vue3-fb-chat',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
   module: {
     rules: [
