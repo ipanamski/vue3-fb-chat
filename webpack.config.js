@@ -6,6 +6,8 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+    library: 'vue3-fb-chat',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
