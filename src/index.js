@@ -1,7 +1,7 @@
 import { getFbSdk, mountFbCustomerChat } from './helpers'
 
-const VueFbCustomerChat = {
-  install(app, options) {
+export default {
+  install : function (app, options) {
     app.config.globalProperties.$fbCustomerChat = {
       setOptions(otherOptions) {
         options = { ...options, ...otherOptions }
@@ -25,5 +25,3 @@ const VueFbCustomerChat = {
     })
   }
 }
-
-export default VueFbCustomerChat
